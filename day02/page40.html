@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        #total {
+            width: 800px;
+            height: 800px;
+            background: lightcyan;
+        }
+        body {
+            background: skyblue;
+        }
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+            margin:0 auto;
+        }
+        #top2 {
+            border: 20px dotted dodgerblue;
+            box-shadow: 10px 10px navy;
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        #center {
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+            float:left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+        li:nth-child(2n) {
+            background: orange;
+        }
+        li:nth-child(2n + 1) {
+            background: yellow;
+        }
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        ul {
+            position: absolute;
+            left: 10%;
+            transform: translateX(-10%);
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 메뉴 들어가는 부분 -->
+            <!-- 순서 없는 목록 -->
+            <ul>
+                <li>
+                    <!-- a 컨트롤 + 스페이스바 -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <!-- a 컨트롤 + 스페이스바 -->
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <!-- a 컨트롤 + 스페이스바 -->
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <!-- a 컨트롤 + 스페이스바 -->
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            <!-- 고정된 화면이 보이는 부분.. 장바구니.. -->
+            나뭇잎같이 생겼당
+        </div>
+        <div id="center">
+            <!-- 해당 페이지 내용 -->
+            <table border="1">
+                <tr align="center">
+                    <td>선택</td>
+                    <td>번호</td>
+                    <td>종류</td>
+                    <td>제품명</td>
+                    <td>가격</td>
+                    <td>이미지</td>
+                </tr>
+                <tr align="center">
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>1</td>
+                    <td>핸드크림</td>
+                    <td>카밀 핸드크림</td>
+                    <td>5000원</td>
+                    <td><img src="2.jpg" alt=""></td>
+                </tr>
+                <tr align="center">
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>2</td>
+                    <td>그립톡</td>
+                    <td>하트 그립톡</td>
+                    <td>1000원</td>
+                    <td><img src="3.jpg" alt=""></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="6"><button>선택 상품 구매</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
