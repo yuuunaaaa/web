@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음식 종류</title>
+    <script>
+        function fuc1() {
+            img1 = document.getElementById("img")
+            img1.src ="food1.jpg";
+         }
+         function fuc2() {
+            img2 = document.getElementById("img")
+            img2.src ="food2.jpg";
+        }
+        function fuc3() {
+            document.getElementById("img").src ="food3.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>음식 종류를 고르세요.</h1>
+    <button id="button1" onclick="fuc1()"> 한식 </button>
+	<button id="button2" onclick="fuc2()"> 분식</button>
+    <button id="button3" onclick="fuc3()"> 양식</button> <br>
+    <div id="menu">
+        <img id="img" src="food1.jpg" />
+    </div>
+</body>
+</html>

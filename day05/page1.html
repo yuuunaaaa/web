@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 수단</title>
+    <script>
+        function pay(){
+            // 1. 입력 - 입력한 값 가지고 오기
+            payment = document.getElementById('pay').value
+            price = document.getElementById('price').value
+            market = document.getElementById('market').value
+            resultTag = document.getElementById('result')
+            money = parseInt(price)
+            // 2. 처리 - 결제금액 계산
+            if (payment == 2){
+                money = money + 1000
+            }else if (payment == 3){
+                money = money + 500
+            }
+            // 3. 출력 - 결과를 출력
+            resultTag.innerHTML = market + '에서 <font color=red>' + money + '</font>원을 결제수단 ' + payment + '번으로 결제했습니다.'
+        }
+    </script>
+</head>
+<body>
+    <hr color="red">
+    구매상점 : <input type="text" id="market" value="더조은샵"><br>
+    결제금액 : <input type="text" id="price" value="10000"><br>
+    결제수단 : (1)계좌이체, (2)신용카드, (3) 휴대폰 결제
+    <input type="text" id="pay" value="1"><br>
+    <button onclick="pay()">결제 버튼</button>
+    <hr color="blue">
+    <div id="result"></div>
+    결제내역
+</body>
+</html>

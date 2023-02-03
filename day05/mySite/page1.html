@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 주변 맛집</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+     <script>
+     $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).on( "click", function( event ) {
+      event.preventDefault();
+    } );
+  } );
+  </script>
+</head>
+<body>
+    <h1>내 주변 맛집</h1>
+    <img src="images.jpg" alt=""> <br>
+    1. 음식 종류 고르기  
+    <button class="ui-button ui-widget ui-corner-all" onClick= "location.href='page2.html'" style="background-color: lightpink;">클릭</button>
+    <br>
+    2. 인기 순위 3위 보러가기
+    <button class="ui-button ui-widget ui-corner-all" onClick= "location.href='page3.html'" style="background-color: lightpink;">클릭</button>
+</body>
+</html>
